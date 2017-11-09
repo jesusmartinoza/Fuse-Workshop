@@ -1,5 +1,7 @@
 # Fuse Workshop
 [Ver presentación](https://docs.google.com/presentation/d/1OCSQNieqYhDiE-bc97d2lSZ8G5W-DKn6u9h8dqR_UXo/edit?usp=sharing)
+
+### Temario 
  - Estructura de un proyecto Fuse
  - Elementos primitivos
  - Observables
