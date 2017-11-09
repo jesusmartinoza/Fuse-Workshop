@@ -11,9 +11,9 @@
 			},
 			{
 				"id" : 2,
-				"name" : "La lección de August",
-				"author" : "R. J. Palacio",
-				"image" : "http://www.gandhi.com.mx/media/catalog/product/cache/1/image/370x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_1165_1_64305.jpg",
+				"name" : "Juego de tronos",
+				"author" : "George R.R. Martin",
+				"image" : "https://imagessl1.casadellibro.com/a/l/t0/91/9788483656891.jpg",
 				"count" : 239
 			},
 			{
@@ -50,6 +50,29 @@
 			{
 				"id" : 3,
 				"image" : "http://2.bp.blogspot.com/-9cA_Jj5HwbQ/TzlAH0TH7GI/AAAAAAAAAZs/2W8DCgLYU1M/s1600/Contra%2Bla%2BViolencia.jpg"
+			}
+		],
+		"special" : [
+			{
+				"id" : 1,
+				"name" : "La ciencia de los cínicos",
+				"author" : "Eduardo Salles",
+				"image" : "https://imagessl6.casadellibro.com/a/l/t0/66/9788403015166.jpg",
+				"rate" : 5
+			},
+			{
+				"id" : 2,
+				"name" : "El psicoanalista",
+				"author" : "John Katzenbach",
+				"image" : "http://www.elresumen.com/libros/el_psicoanalista.jpg",
+				"rate" : 4
+			},
+			{
+				"id" : 3,
+				"name" : "50 sombras de Grey",
+				"author" : "E.L. James",
+				"image" : "http://todo50sombrasdegrey.com/wp-content/uploads/2014/12/cincuenta-somwbras-de-grey.jpg",
+				"rate" : 2
 			}
 		]
 	},
