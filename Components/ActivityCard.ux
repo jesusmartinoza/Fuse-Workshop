@@ -1,0 +1,5 @@
+<Rectangle ux:Class="ActivityCard" Width="240" Height="160" Margin="8" CornerRadius="4">
+    <string ux:Property="ImageUrl" /> <!-- Propiedades van con mayúscula -->
+
+    <ImageFill Url="{image}" StretchMode="UniformToFill" />
+</Rectangle>

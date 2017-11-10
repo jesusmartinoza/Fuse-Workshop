@@ -1,0 +1,38 @@
+<Rectangle ux:Class="SpecialCard" Fill="#fff" CornerRadius="4"
+    Width="200" Margin="Margin8,20" Padding="12">
+    <StackPanel>
+        <!-- Imagen de libro -->
+        <Rectangle ux:Name="cover" Width="70" Height="100" Background="#fff" CornerRadius="4">
+            <ImageFill Url="{image}" StretchMode="UniformToFill" />
+            <Shadow Color="#2221" Size="6" />
+        </Rectangle>
+
+        <!-- Titulo -->
+        <Text FontSize="13" Value="{name}" Font="Bold" Margin="0,8,0,4"
+             TextWrapping="Wrap" TextAlignment="Center" />
+        <Text FontSize="13" Value="{author}" TextAlignment="Center" />
+
+        <!-- Calificacion -->
+        <StackPanel Orientation="Horizontal" Alignment="HorizontalCenter" Margin="0,18">
+            <Each Count="{rate}">
+                <Image File="../Assets/img/ic_star.png" Width="16" Height="16" Color="#FFB74B" />
+            </Each>
+            <Each Count="5 - {rate}">
+                <Image File="../Assets/img/ic_star.png" Width="16" Height="16" Color="#eaeaea" />
+            </Each>
+        </StackPanel>
+
+        <!-- Boton Leer -->
+        <Rectangle ux:Name="btnRead" Alignment="Center" CornerRadius="12" Padding="16,6">
+            <Text ux:Name="btnText" Value="Leer" TextColor="#FFB74B" Font="Bold" FontSize="14" />
+            <Stroke Color="#FFB74B" />
+
+            <WhilePressed>
+                <Change btnText.TextColor="#fff" Duration="0.2" />
+                <Change btnRead.Color="#FFB74B" Duration="0.2" />
+            </WhilePressed>
+        </Rectangle>
+    </StackPanel>
+
+    <Shadow Color="#2222" Size="12" />
+</Rectangle>

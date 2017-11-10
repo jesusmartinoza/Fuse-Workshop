@@ -1,2 +1,12 @@
 <App>
+    <Font ux:Global="Dosis" File="Assets/fonts/Dosis-Regular.otf" />
+    <Font ux:Global="Bold" File="Assets/fonts/Dosis-Bold.otf" />
+    <int ux:Global="Margin8" ux:Value="8" />
+
+    <ClientPanel>
+        <!-- Solamente afecta a dispositivos Android -->
+        <Android.StatusBarConfig Color="#00f" IsVisible="true" />
+
+        <DashboardPage />
+    </ClientPanel>
 </App>

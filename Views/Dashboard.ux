@@ -1,0 +1,44 @@
+<Panel ux:Class="DashboardPage" Background="#fefefe">
+    <JavaScript File="../Javascript/Dashboard.js" />
+
+    <ScrollView Padding="24,12">
+        <StackPanel>
+            <!-- Barra de busqueda -->
+            <!-- Recomendación: Utilizar iconos en blanco y cambiar el color con atributo Color -->
+            <TextInput PlaceholderText="Búsqueda" Background="#fff" MaxWidth="300" Value="{search}"
+                 Height="40" Margin="12" Padding="8" Alignment="Top" PlaceholderColor="#aaa" TextColor="#9649AC" >
+                 <Image File="../Assets/img/ic_search.png" Color="#888" Alignment="Right"/>
+                 <Shadow Color="#2221" Size="10" />
+            </TextInput>
+
+            <H2 Value="Popular" />
+            <ScrollView AllowedScrollDirections="Horizontal" Margin="-24,0"
+                 Padding="24,0" ClipToBounds="false" ZOffset="2">
+                <StackPanel Orientation="Horizontal">
+                    <Each Items="{books}">
+                        <PopularCard Clicked="{deleteCard}" />
+                    </Each>
+                </StackPanel>
+            </ScrollView>
+
+            <H2 Value="Activity" />
+            <ScrollView AllowedScrollDirections="Horizontal" Margin="-24,0" Padding="24,0">
+                <StackPanel Orientation="Horizontal">
+                    <Each Items="{activities}">
+                        <ActivityCard />
+                    </Each>
+                </StackPanel>
+            </ScrollView>
+
+            <H2 Value="Special" />
+            <ScrollView AllowedScrollDirections="Horizontal" Margin="-24,0" Padding="24,0">
+                <StackPanel Orientation="Horizontal">
+                    <Each Items="{special}">
+                        <SpecialCard />
+                    </Each>
+                </StackPanel>
+            </ScrollView>
+        </StackPanel>
+    </ScrollView>
+
+</Panel>

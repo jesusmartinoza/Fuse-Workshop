@@ -1,0 +1,13 @@
+<StackPanel ux:Class="PopularCard" Margin="8">
+    <Rectangle ux:Name="image" Width="80" Height="120" CornerRadius="8">
+        <ImageFill Url="{image}"
+             StretchMode="UniformToFill" />
+    </Rectangle>
+    <Text Value="{name}" Font="Bold" FontSize="14" />
+    <Text Value="{count} reads" FontSize="14" />
+
+    <WhilePressed>
+        <Change image.Opacity="1.6" Duration="0.2" />
+        <Move Target="image" Y="-30" Duration="0.3" />
+    </WhilePressed>
+</StackPanel>

@@ -1,0 +1,3 @@
+<Text ux:Class="Title" Font="Bold" FontSize="16">
+    <float4 ux:Property="IconColor" />
+</Text>

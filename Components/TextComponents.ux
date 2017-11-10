@@ -1,0 +1,3 @@
+<Panel ux:Class="Resources">
+    <Text ux:Class="H2" Font="Bold" FontSize="18" Margin="0,10,0,0" />
+</Panel>
